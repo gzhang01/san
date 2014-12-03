@@ -1,1 +1,1 @@
-<h1 class="left">The Network</h1>
+<h1>The Network</h1>

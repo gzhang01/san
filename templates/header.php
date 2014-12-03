@@ -36,13 +36,13 @@
                             <ul>
                                 <li><a href="aboutnetwork.php">The Network</a></li>
                                 <li><a href="conference.php">Student Activist Conference</a></li>
-                                <li>Endorsing SAN</li>
-                                <li>The Team</li>
+                                <li><a href="endorsing.php">Endorsing SAN</a></li>
+                                <li><a href="team.php">The Team</a></li>
                             </ul>
                         </li>
-                        <li>Endorsers</li>
-                        <li>News</li>
-                        <li>Join the Network</li>
+                        <li><a href="endorsers.php">Endorsers</a></li>
+                        <li><a href="news.php">News</a></li>
+                        <li><a href="join.php">Join the Network</a></li>
                     </ul>
                 </div>
             </div>
