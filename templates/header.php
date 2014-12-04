@@ -21,6 +21,7 @@
         <script src="/js/jquery-1.11.1.min.js"></script>
         <script src="/js/bootstrap.min.js"></script>
         <script src="/js/scripts.js"></script>
+        <script src="/easyslider1.7/js/easySlider1.7.js"></script>
 
         <?php if (isset($js)): ?>
             <script src="/js/<?= htmlspecialchars($js) ?>"></script>

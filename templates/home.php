@@ -1,9 +1,13 @@
 <div id="slideshow">
-		<img src="/img/banner/001.png" />
-		<img src="/img/banner/002.png" />
-		<img src="/img/banner/003.png" />
-		<img src="/img/banner/004.png" />
-		<img src="/img/banner/005.png" />
+	<div id="slider">
+		<ul>				
+			<li><img src="/img/banner/001.png" alt="Css Template Preview" /></li>
+			<li><img src="/img/banner/002.png" alt="Css Template Preview" /></li>
+			<li><img src="/img/banner/003.png" alt="Css Template Preview" /></li>
+			<li><img src="/img/banner/004.png" alt="Css Template Preview" /></li>
+			<li><img src="/img/banner/005.png" alt="Css Template Preview" /></li>			
+		</ul>
+	</div>
 </div><br />
 
 <div id="content">

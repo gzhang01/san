@@ -8,3 +8,12 @@
  *
  * JavaScript for home page
  */
+
+
+$(document).ready(function(){	
+	$("#slider").easySlider({
+		auto: true, 
+		continuous: true,
+		numeric: true
+	});
+});	
