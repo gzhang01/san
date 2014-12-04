@@ -13,9 +13,9 @@
 
 
     // Constants for the database; will update when database is set up
-    /*
+    
     // your database's name
-    define("DATABASE", "pset7");
+    define("DATABASE", "san");
 
     // your database's password
     define("PASSWORD", "crimson");
@@ -25,6 +25,6 @@
 
     // your database's username
     define("USERNAME", "jharvard");
-    */
+    
 
 ?>

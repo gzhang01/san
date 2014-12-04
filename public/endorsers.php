@@ -14,6 +14,6 @@
     require("../includes/config.php"); 
     
     // render page
-    render("endorserstp.php", ["title" => "Endorsers"]);
+    render("endorserstp.php", ["title" => "Endorsers", "css" => "endorsers.css"]);
 
 ?>
