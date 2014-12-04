@@ -1,7 +1,7 @@
 <?php
 
 	/**
-	 * news.php
+	 * blog.php
 	 * CS50 Final Project
 	 *
 	 * @author: George Zhang
@@ -14,6 +14,6 @@
     require("../includes/config.php"); 
     
     // render page
-    render("newstp.php", ["title" => "News"]);
+    render("blogtp.php", ["title" => "Blog"]);
 
 ?>

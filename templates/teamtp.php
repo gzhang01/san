@@ -1,1 +1,1 @@
-<h1>The Team</h1>
+<h2>Our Team</h2>

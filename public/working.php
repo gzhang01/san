@@ -1,7 +1,7 @@
 <?php
 
 	/**
-	 * join.php
+	 * working.php
 	 * CS50 Final Project
 	 *
 	 * @author: George Zhang
@@ -14,6 +14,6 @@
     require("../includes/config.php"); 
     
     // render page
-    render("jointp.php", ["title" => "Join the Network"]);
+    render("workingtp.php", ["title" => "Working for SAN"]);
 
 ?>

@@ -1,1 +1,1 @@
-<h1>Student Activist Conference</h1>
+<h2>Student Activist Conference</h2>
