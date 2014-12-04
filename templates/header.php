@@ -7,7 +7,10 @@
         <link href="/css/bootstrap.min.css" rel="stylesheet"/>
         <link href="/css/bootstrap-theme.min.css" rel="stylesheet"/>
         <link href="/css/styles.css" rel="stylesheet"/>
-        <link href="/css/home.css" rel="stylesheet"/>
+
+        <?php if (isset($css)): ?>
+            <link href="/css/<?= htmlspecialchars($css) ?>" rel="stylesheet"/>
+        <?php endif ?>
 
         <?php if (isset($title)): ?>
             <title><?= htmlspecialchars($title) ?></title>
@@ -18,6 +21,10 @@
         <script src="/js/jquery-1.11.1.min.js"></script>
         <script src="/js/bootstrap.min.js"></script>
         <script src="/js/scripts.js"></script>
+
+        <?php if (isset($js)): ?>
+            <script src="/js/<?= htmlspecialchars($js) ?>"></script>
+        <?php endif ?>
 
         <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
         <link rel="icon" href="img/favicon.ico" type="image/x-icon">

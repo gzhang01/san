@@ -14,6 +14,6 @@
     require("../includes/config.php"); 
     
     // render page
-    render("home.php", ["title" => "Student Activist Network"]);
+    render("home.php", ["title" => "Student Activist Network", "css" => "home.css"]);
 
 ?>
