@@ -64,6 +64,7 @@
                                 <li><a href="support.php">Show your support</a></li>
                                 <li><a href="endorsing.php">Endorsing SAN</a></li>
                                 <li><a href="working.php">Working for SAN</a></li>
+                                <li><a href="register.php">Create a New Account</a></li>
                             </ul>
                         </li>
 

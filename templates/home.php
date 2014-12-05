@@ -36,8 +36,7 @@
 		<h2>Joining SAN</h2>
 		<p>
 		If you a member of a student group in Boston and want more information or are 
-		interested in joining the network, reach us by email at 
-		studentactivistnetwork@gmail.com
+		interested in joining the network, reach us by email at *email*.
 		</p>
 	</div>
 </div>

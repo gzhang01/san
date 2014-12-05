@@ -30,8 +30,7 @@
         
         
         // render page
-        // render("databaseresponse.php", ["title" => "Database"]);
-        // make databaseresponse.php
+        render("databaseresponse.php", ["title" => "Database"]);
     
     }
 
