@@ -27,6 +27,27 @@ form {
 	box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
 }
 
+.instructions {
+	margin-top: -20px;
+}
+
+.required {
+	color: red;
+	position: relative;
+	float: left;
+	margin-bottom: -8px;
+	margin-left: 5px;
+}
+
+span {
+	position: relative;
+	float: left;
+}
+
+span.number {
+	margin-bottom: 7px;
+}
+
 input {
 	width: 450px;
 	height: 25px;
@@ -51,16 +72,20 @@ textarea {
 }
 
 select {
-	width: 432px;
+	width: 450px;
 	padding: 1px 5px 1px 5px;
 	margin-bottom: 5px;
+	font-weight: normal;
 	-webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
 	-moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
 	box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
 }
 
-select#cause {
-	width: 450px;
+select#skill {
+	width: 431px;
+	position: relative;
+	float: right;
+	margin-left: 5px;
 }
 
 button {
@@ -77,4 +102,8 @@ button {
 
 textarea:focus, input:focus {
 	border: 1px solid #0099CC;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color: black;
 }

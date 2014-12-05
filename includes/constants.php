@@ -28,5 +28,9 @@
     //define("USERNAME", "gzhangdb");
     define("USERNAME", "jharvard");
     
+    // max skills
+    define("MAXSKILLS", 3);
 
+    // max skills wanted
+    define("MAXSKILLSWANTED", 2);
 ?>

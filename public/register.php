@@ -38,7 +38,13 @@
             apologize('Please tell us what the cause of your organization is');
 
         // attempt to insert into database
-        $q = query("INSERT INTO organizations (username, password, organization_name, description, cause, skill1, skill2, skill3, skill_wanted1, skill_wanted2) VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?, ?)", $_POST['username'], $_POST['password'], $_POST['organization_name'], $_POST['description'], $_POST['cause'], $_POST['skill1'], $_POST['skill2'], $_POST['skill3'], $_POST['skill_wanted1'], $_POST['skill_wanted2']);
+        $q = query("INSERT INTO organizations (username, password, 
+            organization_name, description, cause, skill1, skill2, skill3, 
+            skill_wanted1, skill_wanted2) VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?, ?)", 
+            $_POST['username'], $_POST['password'], $_POST['organization_name'], 
+            $_POST['description'], $_POST['cause'], $_POST['skill1'], 
+            $_POST['skill2'], $_POST['skill3'], $_POST['skill_wanted1'], 
+            $_POST['skill_wanted2']);
         // if insert failed
         if($q === false)
             apologize("Something went wrong!"); 
