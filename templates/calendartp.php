@@ -1,23 +1,37 @@
 <h2>Upcoming Endorser Events</h2>
 
-<iframe src="https://www.google.com/calendar/embed?src=studentactivistnetwork%40gmail.com&ctz=America/New_York" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
 
+<button id="addevent" onclick="toggleDiv()">Add Event</button>
 
-<h2>Submit an event to the calendar!</h2>
+<form id="form" method="post" enctype="text/plain"> 
+    <fieldset>
+        <legend>Submit an event to be added to the calendar</legend>
+        <p class="instructions" style="color:red">* required</p>
+        <label>
+        <span>Name of Hosting Organization:</span>
+            <input type="text" name="name"> 
+        </label>
+        <label>
+        <span>Title of Event:</span>
+            <input type="text" name="event_title">   
+        </label>
+        <label>
+        <span>Date of Event:</span>
+            <input type="text" name="date" placeholder="**/**/****">
+        </label>
+        <label>
+        <span>Time of Event:</span>
+            <input type="text" name="time" placeholder="hh:mm AM/PM">
+        </label>
 
-<form action="MAILTO:studentactivistnetwork@gmail.com" method="post" enctype="text/plain"> 
-    Submit an event to be added to the calendar<br>
-    Name of Hosting Organization:<br>
-        <input type="text" name="name" value="organization name"><br> 
-    Title of Event:<br>
-        <input type="text" name="event_title" value="event name"><br>   
-    Date of Event:<br>
-        <input type="text" name="date" value="**/**/****"><br>
-    Time of Event:<br>
-        <input type="text" name="time" value="00:00 AM/PM"><br>
-    <input type="submit" value="Send">
-    <input type="reset" value="Reset">
-</form>       
+        <div class="space"></div>
+        <input class="button" type="submit" value"Submit">
+        <input class="button" type="reset" value="Reset">
+    </fieldset>
+</form>    
 
+<div id="content">
+    <iframe src="https://www.google.com/calendar/embed?src=studentactivistnetwork%40gmail.com&ctz=America/New_York" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+</div>
 
 

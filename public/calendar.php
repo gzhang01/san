@@ -14,6 +14,6 @@
     require("../includes/config.php"); 
     
     // render page
-    render("calendartp.php", ["title" => "Calendar"]);
+    render("calendartp.php", ["title" => "Calendar", "cssarray" => ["form.css", "calendar.css"], "js" => "calendar.js"]);
 
 ?>

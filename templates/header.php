@@ -12,6 +12,16 @@
             <link href="/css/<?= htmlspecialchars($css) ?>" rel="stylesheet"/>
         <?php endif ?>
 
+        <?php if (isset($cssarray)): ?>
+            <?php 
+                foreach ($cssarray as $csstp)
+                {   
+                    $css = htmlspecialchars($csstp);
+                    print("<link href='/css/{$css}' rel='stylesheet'/>");
+                }
+            ?>
+        <?php endif ?>
+
         <?php if (isset($title)): ?>
             <title><?= htmlspecialchars($title) ?></title>
         <?php else: ?>
@@ -43,28 +53,28 @@
                         <li><a href="index.php">Home</a></li>
                         <li>About
                             <ul>
-                                <li><a href="aboutnetwork.php">The Network</a></li>
-                                <li><a href="conference.php">Student Activist Conference</a></li>
-                                <li><a href="seminars.php">Flash Seminars</a></li>
-                                <li><a href="team.php">Our Team</a></li>
+                                <a href="aboutnetwork.php"><li>The Network</li></a>
+                                <a href="conference.php"><li>Student Activist Conference</li></a>
+                                <a href="seminars.php"><li>Flash Seminars</li></a>
+                                <a href="team.php"><li>Our Team</li></a>
                             </ul>
                         </li>
                         <li><a href="database.php">Database</a></li>
                         <li><a href="endorsers.php">Endorsers</a></li>
                         <li>Media
                             <ul>
-                                <li><a href="calendar.php">Calendar</a></li>
-                                <li><a href="blog.php">Blog</a></li>
-                                <li><a href="photos.php">Photos</a></li>
-                                <li><a href="videos.php">Videos</a></li>
+                                <a href="calendar.php"><li>Calendar</li></a>
+                                <a href="blog.php"><li>Blog</li></a>
+                                <a href="photos.php"><li>Photos</li></a>
+                                <a href="videos.php"><li>Videos</li></a>
                             </ul>
                         </li>
                         <li>Join the Network
                             <ul>
-                                <li><a href="support.php">Show your support</a></li>
-                                <li><a href="endorsing.php">Endorsing SAN</a></li>
-                                <li><a href="working.php">Working for SAN</a></li>
-                                <li><a href="register.php">Create a New Account</a></li>
+                                <a href="support.php"><li>Show your support</li></a>
+                                <a href="endorsing.php"><li>Endorsing SAN</li></a>
+                                <a href="working.php"><li>Working for SAN</li></a>
+                                <a href="register.php"><li>Create a New Account</li></a>
                             </ul>
                         </li>
 
