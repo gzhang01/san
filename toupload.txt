@@ -2,17 +2,14 @@ to update:
 
 template:
 calendartp.php
-header.php
 
 css:
-form.css
-calendar.css
+
 
 public:
-calendar.php
+
 
 includes:
 
 
 js:
-calendar.js
