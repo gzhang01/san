@@ -9,11 +9,11 @@
      * @author: Leia Wedlund
      *
 	 */
-
-    // configuration
+	 
+    // configuration    
     require("../includes/config.php"); 
     
     // render page
-    render("workingtp.php", ["title" => "Working for SAN"]);
+    render("workingtp.php", ["title" => "Work for SAN", "css" => "form.css"]); 
 
 ?>

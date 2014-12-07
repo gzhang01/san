@@ -93,7 +93,9 @@
                     $skills_wanted = "None";
 
                 $data[] = [
+                    "id" => $result['id'],
                     "organization_name" => $result['organization_name'],
+                    "email" => $result['email'],
                     "description" => $result['description'],
                     "cause" => $result['cause'],
                     "skills" => $skills,
@@ -103,7 +105,7 @@
             }
 
             // render page
-            render("databaseresponse.php", ["title" => "Database", "data" => $data, "css" => "databaseresponse.css"]);
+            render("databaseresponse.php", ["title" => "Database", "data" => $data, "css" => "databaseresponse.css", "js" => "databaseresponse.js"]);
         }
         
     

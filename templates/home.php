@@ -1,3 +1,5 @@
+<!--Easyslider1.7 adapted from http://cssglobe.com/lab/easyslider1.7/03.html-->
+
 <div id="slideshow">
 	<div id="slider">
 		<ul>				
@@ -35,8 +37,8 @@
 	<div class="panel">
 		<h2>Joining SAN</h2>
 		<p>
-		If you a member of a student group in Boston and want more information or are 
-		interested in joining the network, reach us by email at *email*.
+		If you are a member of a student group in Boston and want more information, or are 
+		interested in joining the network, reach us by email at studentactivistnetwork@gmail.com.
 		</p>
 	</div>
 </div>

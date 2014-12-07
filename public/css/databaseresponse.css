@@ -32,8 +32,8 @@ td#name {
 	text-align: center;
 }
 
-td#desc {
-	width: 325px;
+td#email {
+	width: 275px;
 }
 
 td#cause {
@@ -46,7 +46,7 @@ td#skills {
 }
 
 td#wanted {
-	width: 150px;
+	width: 200px;
 	border-right: none;
 }
 

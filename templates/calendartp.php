@@ -1,28 +1,29 @@
 <h2>Upcoming Endorser Events</h2>
 
 
-<button id="addevent" onclick="toggleDiv()">Add Event</button>
+<button id="addevent" onclick="toggleDiv();">Add Event</button>
 
-<form id="form" method="post" enctype="text/plain"> 
+<form id="form" action="calendar.php" method="post"> 
     <fieldset>
         <legend>Submit an event to be added to the calendar</legend>
         <p class="instructions" style="color:red">* required</p>
         <label>
-        <span>Name of Hosting Organization:</span>
-            <input type="text" name="name"> 
+        <span>Name of Hosting Organization:</span><p class="required"> *</p>
+            <input type="text" name="name" autocomplete="off"> 
         </label>
         <label>
-        <span>Title of Event:</span>
-            <input type="text" name="event_title">   
+        <span>Title of Event:</span><p class="required"> *</p>
+            <input type="text" name="event_title" autocomplete="off">   
         </label>
         <label>
-        <span>Date of Event:</span>
-            <input type="text" name="date" placeholder="**/**/****">
+        <span>Date of Event:</span><p class="required"> *</p>
+            <input type="text" name="date" placeholder="**/**/****" autocomplete="off">
         </label>
         <label>
-        <span>Time of Event:</span>
-            <input type="text" name="time" placeholder="hh:mm AM/PM">
+        <span>Time of Event:</span><p class="required"> *</p>
+            <input type="text" name="time" placeholder="hh:mm AM/PM" autocomplete="off">
         </label>
+        <p class="center">Note: Submission subject to review before being added to calendar</p>
 
         <div class="space"></div>
         <input class="button" type="submit" value"Submit">
@@ -30,8 +31,12 @@
     </fieldset>
 </form>    
 
+<?php if (isset($message)): ?>
+    <h3>Event Requested!</h3>
+<?php endif ?>
+
 <div id="content">
-    <iframe src="https://www.google.com/calendar/embed?src=studentactivistnetwork%40gmail.com&ctz=America/New_York" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+    <iframe src="https://www.google.com/calendar/embed?title=Student%20Activist%20Network%20Calendar%20&amp;showPrint=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FNew_York" style=" border-width:0 " width="800" height="600" frameborder="0" scrolling="no"></iframe>
 </div>
 
 

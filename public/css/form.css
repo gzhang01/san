@@ -45,7 +45,8 @@ span {
 }
 
 span.number {
-	margin-bottom: 7px;
+	position: relative;
+	margin-bottom: 5px;
 }
 
 input {
@@ -82,9 +83,8 @@ select {
 }
 
 select#skill {
-	width: 431px;
+	width: 200px;
 	position: relative;
-	float: right;
 	margin-left: 5px;
 }
 

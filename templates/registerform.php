@@ -33,6 +33,10 @@
                 <textarea id="description" name="description" placeholder="1000 character max"></textarea>
             </label>
             <label>
+                <span>Contact Email:</span><p class="required"> *</p>
+                <input id="email" name="email" placeholder="example@example.com" autocomplete="off" type="text"/>
+            </label>
+            <label>
                 <span>Cause:</span><p class="required"> *</p>
                 <select id="cause" name="cause">
                     <option value="">---Cause---</option>

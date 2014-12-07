@@ -14,6 +14,6 @@
     require("../includes/config.php"); 
     
     // render page
-    render("teamtp.php", ["title" => "The Team"]);
+    render("teamtp.php", ["title" => "The Team", "css" => "team.css"]);
 
 ?>

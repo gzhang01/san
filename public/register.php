@@ -39,10 +39,10 @@
 
         // attempt to insert into database
         $q = query("INSERT INTO organizations (username, password, 
-            organization_name, description, cause, skill1, skill2, skill3, 
-            skill_wanted1, skill_wanted2) VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?, ?)", 
-            $_POST['username'], $_POST['password'], $_POST['organization_name'], 
-            $_POST['description'], $_POST['cause'], $_POST['skill1'], 
+            organization_name, email, description, cause, skill1, skill2, skill3, 
+            skill_wanted1, skill_wanted2) VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)", 
+            $_POST['username'], crypt($_POST['password']), $_POST['organization_name'], 
+            $_POST['email'], $_POST['description'], $_POST['cause'], $_POST['skill1'], 
             $_POST['skill2'], $_POST['skill3'], $_POST['skill_wanted1'], 
             $_POST['skill_wanted2']);
         // if insert failed
@@ -55,60 +55,9 @@
             $id = $rows[0]["id"];
             $_SESSION["id"] = $id;
             redirect("/");*/
-
-            apologize("Success!");
+            render("registrationsuccess.php", ["title" => "Success!"]);
         }
     
     }
- 
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    /*<?php
-
-	/**
-	 * database.php
-	 * CS50 Final Project
-	 *
-	 * @author: George Zhang
-     * @author: Michael O'Brien
-     * @author: Leia Wedlund
-     *
-	 */
-
-    // configuration
-    /*require("../includes/config.php"); 
-
-    // if user reached page via GET (as by clicking a link or via redirect)
-    if ($_SERVER["REQUEST_METHOD"] == "GET")
-    {
-        // else render form
-        render("deposit_form.php", ["title" => "Log In"]);
-    }
-
-    // else if user reached page via POST (as by submitting a form via POST)
-    else if ($_SERVER["REQUEST_METHOD"] == "POST")
-    {
-        
-        // find groups with same cause
-        query("SELECT * FROM `name` WHERE MATCH(cause, skills, skills_wanted) 
-        AGAINST (?, ?, ?)", $_POST['cause'], $_POST['skills'], $_POST['skills_wanted']);
-        
-        
-    
-    
-    }
-    // render page
-    render("databasetp.php", ["title" => "Database"]);
-
-?>*/
-
-
 
 ?>

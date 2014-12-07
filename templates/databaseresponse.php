@@ -4,7 +4,7 @@
 	<table>
 		<tr>
 			<td id="name">Organization Name</td>
-			<td id="desc">Description</td>
+			<td id="email">Email</td>
 			<td id="cause">Cause</td>
 			<td id="skills">Skills</td>
 			<td id="wanted">Skills Wanted</td>
@@ -15,13 +15,15 @@
 			{
 				foreach ($data as $datum)
 				{	
-				print("<tr>");
-				print("<td id='name'>{$datum['organization_name']}</td>");
-				print("<td id='desc'>{$datum['description']}</td>");
-				print("<td id='cause'>{$datum['cause']}</td>");
-				print("<td id='skills'>{$datum['skills']}</td>");
-				print("<td id='wanted'>{$datum['skills_wanted']}</td>");
-				print("</tr>");
+					$id = $datum['id'];
+					print("<tr>");
+					print("<td id='name'>{$datum['organization_name']}</td>");
+					//<a href='profile.php?id={$id}'></a>
+					print("<td id='email'>{$datum['email']}</td>");
+					print("<td id='cause'>{$datum['cause']}</td>");
+					print("<td id='skills'>{$datum['skills']}</td>");
+					print("<td id='wanted'>{$datum['skills_wanted']}</td>");
+					print("</tr>");
 				}
 			}
 		?>

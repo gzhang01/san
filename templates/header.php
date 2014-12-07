@@ -47,7 +47,9 @@
         <div class="container">
 
             <div id="top">
-                <div id="logo"><img src="/img/logo.jpg" /></div>
+                <div id="logo">
+                    <a href="index.php"><img src="/img/logo.jpg" /></a>
+                </div>
                 <div id="menu">
                     <ul>
                         <li><a href="index.php">Home</a></li>
@@ -64,7 +66,7 @@
                         <li>Media
                             <ul>
                                 <a href="calendar.php"><li>Calendar</li></a>
-                                <a href="blog.php"><li>Blog</li></a>
+                                <!--<a href="blog.php"><li>Blog</li></a>-->
                                 <a href="photos.php"><li>Photos</li></a>
                                 <a href="videos.php"><li>Videos</li></a>
                             </ul>

@@ -12,7 +12,7 @@ please consider officially endorsing SAN.
 </p>
 
 <p>
-hyperlinks:
+(soon to be hyperlinks):
 	<ul>
 		<li>Set up a meeting with a SAN representative</li>
 		<li>Endorse SAN</li>

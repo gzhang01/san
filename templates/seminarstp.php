@@ -15,5 +15,5 @@ learning.
 </p>
 
 <p>
-hyperlink: Join the Events Mailing list 
+Events Mailing list to come soon!
 </p>
