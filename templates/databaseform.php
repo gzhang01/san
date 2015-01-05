@@ -1,4 +1,4 @@
-<form action="database.php" method="post">
+<form action="database.php" method="get">
     <div id="content">
         <fieldset>
             <legend>Database Search</legend>

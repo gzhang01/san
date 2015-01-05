@@ -70,6 +70,18 @@ tr:nth-child(1) {
  	background-color: white;
 }
 
+tr:nth-child(even):hover {
+	background-color: #9EDEF0;
+}
+
+tr:nth-child(odd):hover {
+	background-color: #C0DEA2;
+}
+
+tr:nth-child(1):hover {
+	background-color: white;
+}
+
 .noresults {
 	font-style: italic;
 	color: #222222;

@@ -1,6 +1,6 @@
-<h2>Our Team</h2>
-
 <div id="content">
+	<h2>Our Team</h2>
+	<br />
 	<div class="person">
 		<div class="blank"></div>
 		<img src="img/team/michael.jpg" class="right" />
@@ -73,7 +73,7 @@
 		George Zhang is a sophomore at Harvard College studying Computer Science. 
 		He is the all-powerful webmaster of studentactivistnetwork.com. Because he
 		is the all-powerful webmaster, he can really do whatever he wants on the
-		website. Like writing extensively about his power over the site. Take that :P
+		website. Like writing extensively about his power over the site.
 		</p>
 
 	</div>

@@ -9,8 +9,6 @@
  * javascript for database response page
  */
 
- $("#link").click(function() {
- 	var clickedClass = $(this).attr("class");
- 	alert(clickedClass);
- 	return false;
- });
+function nav(url) {
+	document.location.href = url;
+}

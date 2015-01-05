@@ -16,13 +16,12 @@
 				foreach ($data as $datum)
 				{	
 					$id = $datum['id'];
-					print("<tr>");
-					print("<td id='name'>{$datum['organization_name']}</td>");
-					//<a href='profile.php?id={$id}'></a>
-					print("<td id='email'>{$datum['email']}</td>");
-					print("<td id='cause'>{$datum['cause']}</td>");
-					print("<td id='skills'>{$datum['skills']}</td>");
-					print("<td id='wanted'>{$datum['skills_wanted']}</td>");
+					print("<tr onclick=nav('profile.php?id={$id}')>");
+					print("<td id='name'>" . htmlspecialchars("{$datum['organization_name']}") . "</td>");
+					print("<td id='email'>" . htmlspecialchars("{$datum['email']}") . "</td>");
+					print("<td id='cause'>" . htmlspecialchars("{$datum['cause']}") . "</td>");
+					print("<td id='skills'>" . htmlspecialchars("{$datum['skills']}") . "</td>");
+					print("<td id='wanted'>" . htmlspecialchars("{$datum['skills_wanted']}") . "</td>");
 					print("</tr>");
 				}
 			}

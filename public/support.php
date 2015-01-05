@@ -14,6 +14,6 @@
     require("../includes/config.php"); 
     
     // render page
-    render("supporttp.php", ["title" => "Show Your Support"]);
+    render("supporttp.php", ["title" => "Show Your Support", "css" =>"support.css", "js" => "support.js"]);
 
 ?>

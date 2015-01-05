@@ -61,7 +61,7 @@
                                 <a href="team.php"><li>Our Team</li></a>
                             </ul>
                         </li>
-                        <li><a href="database.php">Database</a></li>
+                        <li><a href="search.php">Database</a></li>
                         <li><a href="endorsers.php">Endorsers</a></li>
                         <li>Media
                             <ul>
@@ -77,6 +77,7 @@
                                 <a href="endorsing.php"><li>Endorsing SAN</li></a>
                                 <a href="working.php"><li>Working for SAN</li></a>
                                 <a href="register.php"><li>Create a New Account</li></a>
+                                <a href="update.php"><li>Update Your Account</li></a>
                             </ul>
                         </li>
 

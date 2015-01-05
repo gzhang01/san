@@ -57,23 +57,45 @@
     function merge($array, $array2)
     {
         $return = [];
-        for ($i = 0, $j = 0, $len1 = count($array), $len2 = count($array2); $i < $len1 || $j < $len2; )
-        {
-            // takes largest element from beginning of lists and places it first
+        for ($i = 0, $j = 0, $len1 = count($array), $len2 = count($array2); $i < $len1 || $j < $len2; ) {
+            // if all through with one list, add from the other
             if ($i == $len1)
             {
                 $return[] = $array2[$j];
                 $j++;
             }
-            else if ($j == $len2 || $array[$i]["net"] > $array2[$j]["net"])
+            else if ($j == $len2)
             {
                 $return[] = $array[$i];
                 $i++;
             }
-            else
-            {
-                $return[] = $array2[$j];
-                $j++;
+
+            // else go through letters of first words in arrays and arrange alphabetically
+            else {
+                // initializing some helper variables
+                $letteri = -1;
+                $letterj = -1;
+                $leni = strlen($array[$i]);
+                $lenj = strlen($array[$j]);
+
+                // do this for every letter until they are different
+                do {
+                    // this makes function repeatable even for first iteration
+                    $letteri++;
+                    $letterj++;
+
+                    // put word with smaller value letter first
+                    if ($array[$i][$letteri] < $array2[$j][$letterj] || $letteri == $leni) {
+                        $return[] = $array[$i];
+                        $i++;
+                        break;
+                    }
+                    else if ($array[$i][$letteri] > $array2[$j][$letterj] || $letterj == $lenj) {
+                        $return[] = $array2[$j];
+                        $j++;
+                        break;
+                    }
+                } while ($array[$i][$letteri] == $array2[$j][$letterj]);
             }
         }
         
@@ -83,7 +105,7 @@
     /**
      * Uses mergesort to sort an array
      */
-    function mergesort($array)
+    function alphabetize($array)
     {
         $length = count($array);
         if ($length == 1)
@@ -92,8 +114,8 @@
         }
         else
         {
-            $arrayleft = mergesort(array_slice($array, 0, $length / 2));
-            $arrayright = mergesort(array_slice($array, $length / 2));
+            $arrayleft = alphabetize(array_slice($array, 0, $length / 2));
+            $arrayright = alphabetize(array_slice($array, $length / 2));
             $sorted = merge($arrayleft, $arrayright);
         }
         return $sorted;
@@ -161,8 +183,7 @@
      * Because this function outputs an HTTP header, it
      * must be called before caller outputs any HTML.
      */
-    function redirect($destination)
-    {
+    function redirect($destination) {
         // handle URL
         if (preg_match("/^https?:\/\//", $destination))
         {
@@ -194,8 +215,7 @@
     /**
      * Renders template, passing in values.
      */
-    function render($template, $values = [])
-    {
+    function render($template, $values = []) {
         // if template exists, render it
         if (file_exists("../templates/$template"))
         {
@@ -217,5 +237,41 @@
         {
             trigger_error("Invalid template: $template", E_USER_ERROR);
         }
+    }
+
+    /** takes skills from $data and puts them into a string **/
+    function append_skills($data) {
+        $skills = "";
+        for ($i = 1; $i <= MAXSKILLS; $i++)
+        {
+            $index = 'skill' . $i;
+            if ($data[$index] == NULL)
+                break;
+            if ($i == 1)
+                $skills = $skills . $data[$index];
+            else
+                $skills = $skills . ", " . $data[$index];
+        }
+        if ($skills == "")
+            $skills = "None";
+        return $skills;
+    }
+
+    /** takes skills_wanted from $data and puts them into string **/
+    function append_skills_wanted($data) {
+        $skills_wanted = "";
+        for ($i = 1; $i <= MAXSKILLSWANTED; $i++)
+        {
+            $index = 'skill_wanted' . $i;
+            if ($data[$index] == NULL)
+                break;
+            if ($i == 1)
+                $skills_wanted = $skills_wanted . $data[$index];
+            else
+                $skills_wanted = $skills_wanted . ", " . $data[$index];
+        }
+        if ($skills_wanted == "")
+            $skills_wanted = "None";
+        return $skills_wanted;
     }
 ?>

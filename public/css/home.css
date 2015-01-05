@@ -13,7 +13,7 @@
 	height: 425px;
 	width: 100%;
 	min-width: 1000px;
-	background: -webkit-radial-gradient(#9FCD73, #6ECDE8);
+	background: -webkit-radial-gradient(#9FCD73 50%, #6ECDE8);
 	margin-top: 0px;
 	margin-left: auto;
 	margin-right: auto;	

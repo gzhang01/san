@@ -1,16 +1,15 @@
 to update:
 
 template:
-databasetp.php
+
 
 css:
 
 
 public:
-database.php
+
 
 includes:
 
 
 js:
-databaseresponse.js
